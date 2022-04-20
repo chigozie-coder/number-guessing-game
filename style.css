@@ -1,0 +1,250 @@
+* {
+
+  user-select: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #444444F5;
+
+  font-weight: bolder;
+
+}
+
+body{
+
+  overflow: none;
+
+  position: relative;
+
+  height: 100vh;
+
+  width: 100vw;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+#container {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh;
+
+  width: 100vw;
+
+  background: palevioletred;
+
+  flex-direction: column;
+
+}
+
+h1{
+
+  border-bottom: 2px solid #eeeeeea3;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+
+  place-items: center;
+
+  place-content: center;
+
+  font-weight: 1000 !important;
+
+  font-family: fantasy;
+
+  color: transparent;
+
+  -webkit-text-stroke: 2px white;
+
+  animation: hanime 2s infinite;
+
+  animation-play-state: running;
+
+  animation-direction: alternate;
+
+  animation-timing-function: cubic-bezier(1, -0.28, 0.735, 0.045)
+
+}
+
+#game{
+
+  background: #eeeeee01;
+
+  width: 80%;
+
+  padding:0 10px 0 10px;
+
+  text-align: center;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  place-items: center;
+
+  place-items: center;
+
+  gap: 10px;
+
+  box-shadow: 0 0 10px #000;
+
+  backdrop-filter: blur(2px);
+
+}
+
+input {
+
+  outline: none;
+
+  border-style: none;
+
+  height: 50px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  padding: 0px 10px;
+
+}
+
+p {
+
+  padding:0;
+
+}
+
+button {
+
+  width: 90%;
+
+  border: none;
+
+  height: 50px;
+
+  border-radius: 15px;
+
+  background: lightgreen;
+
+  margin-bottom: 10px;
+
+  font-size: 25px;
+
+  color: floralwhite;
+
+  outline: none;
+
+  font-family: serif;
+
+}
+
+#info {
+
+  width: 200px;
+
+}
+
+#restart{
+
+  z-index: 9999;
+
+  transition: all 1s;
+
+  position: fixed;
+
+  top: 55vh;
+
+  background-color: #FF5252EB;
+
+  border: 2px solid orangered;
+
+  padding:10px 20px;
+
+  transform: translateX(100vh);
+
+}
+
+#rbtn{
+
+  border: 2px solid red;
+
+  border-radius: 5px;
+
+}
+
+#about{
+
+  border-left: 10px solid plum;
+
+  background: whitesmoke;
+
+  width: 100%;
+
+  padding: 10px 5px;
+
+  font-weight: bolder;
+
+}
+
+#score{
+
+  background: ghostwhite;
+
+  padding:10px 15px;
+
+  font-weight: 1000 !important;
+
+  font-size: 20px;
+
+  border-bottom-right-radius: 10px;
+
+  border-bottom-left-radius: 10px;
+
+}
+
+@keyframes hanime{
+
+  0%{
+
+    -webkit-text-stroke: 2px dodgerblue;
+
+  }
+
+  25%{
+
+    -webkit-text-stroke: 2px orangered;
+
+  }
+
+  50%{
+
+    -webkit-text-stroke: 2px gold;
+
+  }
+
+  100%{
+
+    -webkit-text-stroke: 2px greenyellow;
+
+  }
+
+}
+
