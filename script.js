@@ -84,9 +84,9 @@ function getno(){
 
     maxv= Math.floor(Math.random() * (100-minv+1)+minv);
 
-    finnum = ((maxv) - (minv - 1));
+    finnum = (maxv-minv+1);
 
-    number= Math.floor(Math.random() * finnum)+1
+    number= Math.floor(Math.random() * finnum)+minv
 
     head='The number is between ' + minv + ' and ' + maxv + ' and it\'s ' + fun();
 
