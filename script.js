@@ -4,7 +4,7 @@ var restart=document.getElementById('restart');
 
 var highscore=document.querySelector("#score");
 
-var scores=new Array();
+var scores= [];
 
 var score=0;
 
@@ -29,18 +29,24 @@ switch (m) {
   case 'E':
 
     e=true;
+   hi = false;
+    med = false;
 
     break;
 
   case 'H':
 
     hi=true;
+   med = false;
+    e = false;
 
     break;
 
   case 'M':
 
     med=true;
+   high=false;
+   e = false;
 
     break;
 
@@ -150,17 +156,17 @@ updatehint();
 
 button.addEventListener('click', function() { 
 
-  if (Max_Tries==0) {
+  if (Max_Tries===0) {
 
     restart();
 
   }
 
-  else if (Tries_left != 0) {
+  else if (Tries_left !== 0) {
 
-    if (input.value != '') {
+    if (input.value !== '') {
 
-      if (input.value == number) {
+      if (input.value === number) {
 
               
 
